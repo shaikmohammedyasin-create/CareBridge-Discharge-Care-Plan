@@ -29,6 +29,7 @@ class Medicine(BaseModel):
     duration: Optional[str] = Field(default=None, description="e.g. 30 days, 5 days")
     route: Optional[str] = Field(default="oral", description="oral, topical, ophthalmic, inhaled")
     special_instruction: Optional[str] = None
+    needs_confirmation: bool = Field(default=False, description="Flagged for clinical confirmation by nurse")
     source_span: list[int] = Field(
         description="Character offset [start, end] in raw source text"
     )

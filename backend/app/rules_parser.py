@@ -182,6 +182,7 @@ def parse_rules(summary: str) -> CarePlan:
             timing=timing_en or (item.get("timing") if item.get("timing") else None),
             duration=dur,
             route=route,
+            needs_confirmation=is_amb,
             source_span=span,
         ))
         consumed_spans.append(span)
@@ -231,6 +232,7 @@ def parse_rules(summary: str) -> CarePlan:
             ))
 
         dur = f"{duration_num} {duration_unit}" if duration_num else None
+        needs_conf = bool(not freq_token or is_amb or ("drop" in raw_name.lower() and code == "OD"))
 
         medications.append(Medicine(
             id=f"M{med_id_counter}",
@@ -243,6 +245,7 @@ def parse_rules(summary: str) -> CarePlan:
             timing=timing_en or (timing_token.lower() if timing_token else None),
             duration=dur,
             route=route,
+            needs_confirmation=needs_conf,
             source_span=span,
         ))
         consumed_spans.append(span)
