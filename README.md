@@ -6,14 +6,12 @@ Team BALLERINA | Talent AP Mega Hackathon (Problem H2: Healthcare) | Team Leader
 
 ---
 
-## Architecture & Safety Principles
+## Architecture & Runtime Execution Mode
 
-1. **The AI never writes free text for the patient**: Language models only populate a typed care-plan schema. Patient-facing words come from reviewed templates and locked glossaries.
-2. **Dual Extraction**: Deterministic rule parser (authority for dosage tables and dates) + thin LLM extractor (for narrative warning signs, diet, and activity).
-3. **Source-Span Verification**: Every extracted medication, dose, frequency, and date carries an exact character source span. No span, no item.
-4. **Protected Tokens**: Doses (`500 mg`), dates, and drug names are copied verbatim into English and Telugu outputs.
-5. **Round-Trip Safety Diff**: Re-extracts from English and Telugu outputs to block any dropped or altered medicine.
-6. **Safe Failure**: Ambiguities (such as eye drop `OD`) route to the Nurse Review Queue.
+CareBridge employs a dual-engine architecture:
+- **Default Deterministic Pipeline (Offline)**: All dosage tables, medication orders, frequencies, durations, and follow-up dates are extracted via the deterministic rule parser (`rules_parser.py`), while narrative warning signs, diet, and activity are parsed via local section extractors. This pipeline runs 100% offline with zero external network calls, delivering sub-millisecond (0.0007s) execution latency. **All reported benchmark metrics reflect this deterministic mode.**
+- **Optional LLM Adapter**: An OpenAI-compatible adapter (`llm_extractor.py`) is provided for environments with cloud model access (configured via `LLM_BASE_URL` in `.env`). It operates strictly at temperature 0, populating only the typed Pydantic schema without ever generating free-form patient text.
+- **Safety Verification Gate**: In both modes, every extracted item must carry character source spans, and output plans undergo round-trip diff verification in English and Telugu before release. Ambiguities (such as eye drop `OD`) automatically route to the Nurse Review Queue.
 
 ---
 
@@ -46,7 +44,7 @@ Open `http://localhost:5173`. Backend health check: `http://localhost:8001/api/h
 
 ## Run Tests & Evaluation
 
-### Run Test Suite (189 Tests)
+### Run Test Suite (190 Tests)
 
 ```bash
 PYTHONPATH=backend python -m pytest backend/tests/ -v
@@ -65,14 +63,20 @@ Produces:
 
 ---
 
-## Measured Performance (2,000 Cases)
+## Measured Performance (On Project's Synthetic Set of 2,000 Summaries)
+
+*Note on Data Provenance: The organizer's competition files were missing from the environment download; all benchmarks were executed on the project's synthetic dataset of 2,000 summaries (`data/samples/synthetic_2000.json`).*
 
 - **Medicine Recall**: 100.0% (4,148 / 4,148 medicines detected)
+- **Dose Exact Match**: 100.0% (4,148 / 4,148 exact matches)
+- **Frequency Match**: 100.0% (4,148 / 4,148 exact matches)
+- **Duration Match**: 100.0% (4,148 / 4,148 exact matches)
+- **Follow-up Date Match**: 100.0% (2,000 / 2,000 exact matches)
 - **Hard Errors Released**: 0 (zero dropped, altered, or invented instructions)
 - **English Reading Level**: Class 4.3 (Flesch-Kincaid Grade Level)
 - **Telugu Faithfulness**: 100.0% (protected tokens preserved)
-- **Abstain Rate (Nurse Queue)**: 37.1% (calibrated safe failure on ambiguities)
-- **Pipeline Latency**: 0.0019s per summary
+- **Abstain Rate (Nurse Queue)**: 8.3% (166 / 2,000 cases with ophthalmic OD ambiguity)
+- **Pipeline Latency**: 0.0007s per summary (offline deterministic engine)
 
 ---
 

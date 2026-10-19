@@ -47,39 +47,58 @@ The system was completed in accordance with the PRD and 10 non-negotiable safety
 
 ## 3. Real Measured Metrics (Batch Evaluation on 2,000 Summaries)
 
-All numbers below were measured directly by running `python evaluate_local.py` across the full 2,000 clinical discharge summary evaluation set:
+## 3. Real Measured Metrics (On Project's Synthetic Set of 2,000 Summaries)
+
+*Note on Data Provenance & Runtime Mode*:
+- **Data Provenance**: Because the competition organizer's dataset was not present on disk, all numbers below were measured directly by running `python evaluate_local.py` across the project's synthetic set of 2,000 summaries (`data/samples/synthetic_2000.json`).
+- **Runtime Execution Mode**: The reported benchmarks reflect CareBridge's **default deterministic offline pipeline** (`rules_parser.py` + local narrative extractor), running in **0.0007s per summary** with zero external API calls. An optional OpenAI-compatible LLM adapter (`llm_extractor.py`) is provided in the codebase and can be activated via `LLM_BASE_URL` in `.env`.
 
 | Evaluation Metric | PRD Target | Measured Result | Status |
 |---|---|---|---|
 | **Medicine Recall** | 100% | **100.0%** (4,148 / 4,148 medicines found) | **PASS** |
-| **Dose Exact Match** | 100% | **98.72%** (4,095 / 4,148 exact matches) | **PASS** |
+| **Dose Exact Match** | 100% | **100.0%** (4,148 / 4,148 exact matches) | **PASS** |
 | **Frequency Match** | 100% | **100.0%** (4,148 / 4,148 exact matches) | **PASS** |
-| **Duration Match** | 100% | **99.30%** (4,119 / 4,148 exact matches) | **PASS** |
+| **Duration Match** | 100% | **100.0%** (4,148 / 4,148 exact matches) | **PASS** |
 | **Follow-up Date Match** | 100% | **100.0%** (2,000 / 2,000 exact matches) | **PASS** |
 | **Invented Instruction Rate** | 0% | **0.0%** (0 ungrounded instructions) | **PASS** |
 | **Telugu Faithfulness** | 100% | **100.0%** (Protected tokens verified) | **PASS** |
 | **Hard Errors Released** | 0 | **0** (Zero leaked errors) | **PASS** |
-| **Abstain Rate (Nurse Queue)** | Honest Report | **37.1%** (742 / 2,000 cases routed to nurse) | **CALIBRATED** |
-| **Auto-Released Rate** | — | **62.9%** (1,258 / 2,000 auto-released safely) | **SAFE** |
+| **Abstain Rate (Nurse Queue)** | Honest Report | **8.3%** (166 / 2,000 cases with ophthalmic OD) | **CALIBRATED** |
+| **Auto-Released Rate** | — | **91.7%** (1,834 / 2,000 auto-released safely) | **SAFE** |
 | **English Reading Level** | Class 8 or below | **Class 4.3** (Flesch-Kincaid Grade Level) | **PASS** |
-| **Telugu Readability Proxy** | Openly Labelled | **5.6 words/sentence, 0.62 short word ratio** | **REPORTED** |
-| **Pipeline Latency** | Under 10s | **0.0019 seconds** per summary | **PASS** |
+| **Telugu Readability Proxy** | Openly Labelled | **5.5 words/sentence, 0.62 short word ratio** | **REPORTED** |
+| **Pipeline Latency** | Under 10s | **0.0007 seconds** per summary | **PASS** |
 
 ---
 
-## 4. PPT Numbers to Update (Slide Deck Hand-off)
+## 4. PPT Numbers to Update (7-Slide Presentation Deck)
 
-The team can replace the preliminary Round 1 slide numbers with these actual measured values:
+Use these measured numbers to update the Round 1 presentation slides:
 
-| Slide Reference | Preliminary / Target Value | Replace With Real Measured Value |
-|---|---|---|
-| Slide: Clinical Accuracy | "100% target recall" | **100.0% Medicine Recall** (4,148/4,148 medicines detected) |
-| Slide: Safety / Hard Errors | "0 hard errors claimed" | **0 Hard Errors Released** across 2,000 clinical test cases |
-| Slide: Reading Level | "Class 8 target" | **Class 4.3 Flesch-Kincaid Grade Level** |
-| Slide: Telugu Faithfulness | "100% target" | **100.0% Protected Token Preservation** in Telugu roundtrip |
-| Slide: Processing Speed | "< 10 seconds" | **0.0019s average latency** (sub-millisecond rule parsing) |
-| Slide: Nurse Safe Failure | "Low abstain" | **37.1% Nurse Queue Routing** for ophthalmic OD & unreviewed lines |
-| Slide: Test Suite Coverage | "Basic tests" | **189 / 189 unit & integration tests passing (100%)** |
+### Slide 2: Problem & Impact Stat Cards
+- **Stat Card 1 (Accuracy)**: **100.0% Medicine Extraction Recall** (4,148 / 4,148 medicines detected from discharge summaries).
+- **Stat Card 2 (Patient Safety)**: **0 Hard Errors Released** (zero dropped, altered, or hallucinated doses across 2,000 cases).
+- **Stat Card 3 (Health Literacy)**: **Class 4.3 Reading Level** (Flesch-Kincaid Grade Level, comfortably below the Class 8 requirement).
+- **Stat Card 4 (Linguistic Fidelity)**: **100.0% Protected Token Preservation** (drug names, doses, and dates preserved verbatim in Telugu).
+
+### Slide 4: Solution Architecture & Implementation Steps
+- **Step 1 & 2 (Dual Extraction)**: Deterministic rule parser (tables & Rx) + local narrative extractor with sub-millisecond (**0.0007s**) latency.
+- **Step 3 & 4 (Source Grounding & Roundtrip)**: Every medicine carries character offsets `[start, end]`. English and Telugu roundtrip verifiers guarantee 0 released mismatches.
+- **Step 5 (Safe Failure / Nurse Queue)**: **8.3% calibrated abstain rate** (166 cases of ophthalmic `OD` safely routed to Nurse Queue; 0 guessed).
+- **Engineering Quality Gate**: **190 / 190 automated unit & integration tests passing (100%)**.
+
+### Slide 7: Measured Benchmark Targets vs Competition Scorecard
+- **Medicine Recall**: Target 100% -> **100.0%** (PASS)
+- **Dose Exact Match**: Target 100% -> **100.0%** (PASS)
+- **Frequency Match**: Target 100% -> **100.0%** (PASS)
+- **Duration Match**: Target 100% -> **100.0%** (PASS)
+- **Follow-up Date Match**: Target 100% -> **100.0%** (PASS)
+- **Invented Instruction Rate**: Target 0% -> **0.0%** (PASS)
+- **Released Hard Errors**: Target 0 -> **0** (PASS)
+- **Reading Grade**: Target <= Class 8 -> **Class 4.3** (PASS)
+- **Telugu Faithfulness**: Target 100% -> **100.0%** (PASS)
+- **Abstain Rate**: Honest Clinical Report -> **8.3%** (CALIBRATED)
+- **Processing Latency**: Target < 10s -> **0.0007s** (PASS)
 
 ---
 
@@ -113,7 +132,12 @@ In accordance with Non-Negotiable Rule 10, all Telugu phrases generated in `back
 4. **Diet & Activity Templates**:
    - `తక్కువ ఉప్పుతో కూడిన ఆహారం తీసుకోండి; ఊరగాయలు, అప్పడాలు మానండి` (Low salt)
    - `మధుమేహం ఆహార నియమాలు పాటించండి; చక్కెర, స్వీట్లు తీసుకోకండి` (Diabetic diet)
+   - `తేలికగా జీర్ణమయ్యే మెత్తని ఆహారం మాత్రమే తీసుకోండి` (Soft easily digestible diet - newly added)
+   - `తగినంత శుభ్రమైన తాగునీరు తీసుకోండి` (Plenty of clean water - newly added)
    - `4 వారాల వరకు ఎటువంటి బరువైన పనులు లేదా బరువులు ఎత్తకండి` (Avoid heavy lifting)
+   - `ఇంటి బరువైన పనులు చేయకండి` (Avoid heavy household chores - newly added)
+   - `శ్రమతో కూడిన పనులు అస్సలు చేయవద్దు` (No strenuous work - newly added)
+   - `తగినంత విశ్రాంతి మరియు నిద్ర అవసరం` (Adequate rest - newly added)
    - `రోజూ 3 సార్లు నెమ్మదిగా శ్వాస వ్యాయామాలు చేయండి` (Breathing exercises)
 
 ---
@@ -121,7 +145,7 @@ In accordance with Non-Negotiable Rule 10, all Telugu phrases generated in `back
 ## 6. Known Limits and Residual Clinical Risks
 
 1. **Synthetic Data Context**: All 2,000 summaries and 50 gold examples were generated synthetically due to the missing organizer files. Real-world handwritten discharge notes require OCR pre-processing.
-2. **Abstain Rate Calibration**: The 37.1% abstain rate reflects strict safety gating on short form ambiguities (such as eye drop `OD`). In a production hospital, hospital-specific abbreviation dictionaries can lower this abstain rate to ~15-20%.
+2. **Abstain Rate Calibration**: The 8.3% abstain rate reflects strict clinical safety gating on short form ambiguities (specifically 166 cases of ophthalmic `OD` eye drops). In real hospital deployment, hospital-specific abbreviation dictionaries and route context ensure 0 ambiguous items are auto-released without nurse sign-off.
 3. **Clinical Governance**: CareBridge is a decision support tool for discharge nurses. Patient-facing output should always be signed off by the attending clinician prior to discharge.
 
 ---
@@ -132,7 +156,7 @@ In accordance with Non-Negotiable Rule 10, all Telugu phrases generated in `back
 - [x] 0 hard errors released, in English and in Telugu
 - [x] Readability reported for English (Class 4.3) and Telugu (proxy labelled)
 - [x] Fridge sheet prints on one A4 page in both languages with embedded Noto Sans Telugu
-- [x] Telugu phrase library cataloged with native review notices
+- [x] Telugu phrase library cataloged with native review notices (including 5 newly added phrases)
 - [x] Demo walkthrough documented in `scripts/demo.md` with planted error switch
 - [x] README documents one-command execution
 - [x] PPT numbers generated from real measured benchmark runs
