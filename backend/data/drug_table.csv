@@ -1,0 +1,57 @@
+brand_name,generic_name,default_form,default_route,telugu_transliteration,category
+Glycomet,Metformin,tablet,oral,మెట్‌ఫార్మిన్,diabetes
+Amaryl,Glimepiride,tablet,oral,గ్లైమెపిరైడ్,diabetes
+Januvia,Sitagliptin,tablet,oral,సిటాగ్లిప్టిన్,diabetes
+Forxiga,Dapagliflozin,tablet,oral,డాపాగ్లిఫ్లోజిన్,diabetes
+Galvus,Vildagliptin,tablet,oral,విల్డాగ్లిప్టిన్,diabetes
+Lantus,Insulin Glargine,injection,subcutaneous,ఇన్సులిన్ గ్లార్జిన్,diabetes
+Amlong,Amlodipine,tablet,oral,ఆమ్లోడిపైన్,cardiac
+Norvasc,Amlodipine,tablet,oral,ఆమ్లోడిపైన్,cardiac
+Telma,Telmisartan,tablet,oral,టెల్మిసార్టన్,cardiac
+Cresar,Telmisartan,tablet,oral,టెల్మిసార్టన్,cardiac
+Atorva,Atorvastatin,tablet,oral,అటార్వాస్టాటిన్,cardiac
+Storvas,Atorvastatin,tablet,oral,అటార్వాస్టాటిన్,cardiac
+Ecosprin,Aspirin,tablet,oral,యాస్పిరిన్,cardiac
+Deplatt,Clopidogrel,tablet,oral,క్లోపిడోగ్రెల్,cardiac
+Lasix,Furosemide,tablet,oral,ఫ్యూరోసెమైడ్,cardiac
+Tenormin,Atenolol,tablet,oral,అటెనోలోల్,cardiac
+Betaloc,Metoprolol,tablet,oral,మెటోప్రోలోల్,cardiac
+Asthalin,Salbutamol,inhaler,inhaled,సాల్బుటమాల్,respiratory
+Budecort,Budesonide,inhaler,inhaled,బుడెసోనైడ్,respiratory
+Montair,Montelukast,tablet,oral,మాంటెలూకాస్ట్,respiratory
+Deriphyllin,Theophylline and Etophylline,tablet,oral,డెరిఫిల్లిన్,respiratory
+Azithral,Azithromycin,tablet,oral,అజిత్రోమైసిన్,respiratory
+Augmentin,Amoxicillin and Potassium Clavulanate,tablet,oral,అమాక్సిసిలిన్ క్లావులనేట్,infection
+Moxikind-CV,Amoxicillin and Potassium Clavulanate,tablet,oral,అమాక్సిసిలిన్ క్లావులనేట్,infection
+Zifi,Cefixime,tablet,oral,సెఫిక్సిమ్,infection
+Ciprogut,Ciprofloxacin,tablet,oral,సిప్రోఫ్లోక్సాసిన్,infection
+Dolo,Paracetamol,tablet,oral,పారాసిటమాల్,analgesic
+Calpol,Paracetamol,tablet,oral,పారాసిటమాల్,analgesic
+Crocin,Paracetamol,tablet,oral,పారాసిటమాల్,analgesic
+Pan,Pantoprazole,tablet,oral,పాంటోప్రజోల్,gastrointestinal
+Pantocid,Pantoprazole,tablet,oral,పాంటోప్రజోల్,gastrointestinal
+Rantac,Ranitidine,tablet,oral,రాంటిడిన్,gastrointestinal
+Omez,Omeprazole,capsule,oral,ఒమెప్రజోల్,gastrointestinal
+Emeset,Ondansetron,tablet,oral,ఒండాన్‌సెట్రాన్,gastrointestinal
+Voveran,Diclofenac,tablet,oral,డైక్లోఫెనాక్,analgesic
+Ultracet,Tramadol and Paracetamol,tablet,oral,ట్రమడాల్ పారాసిటమాల్,analgesic
+Orofer-XT,Ferrous Ascorbate and Folic Acid,tablet,oral,ఫెర్రస్ ఆస్కార్బేట్,maternity
+Folvite,Folic Acid,tablet,oral,ఫోలిక్ యాసిడ్,maternity
+Shelcal,Calcium and Vitamin D3,tablet,oral,కాల్షియం విటమిన్ డి3,maternity
+Gestofit,Progesterone,capsule,oral,ప్రొజెస్టెరాన్,maternity
+Labil,Labetalol,tablet,oral,లాబెటలోల్,maternity
+Metformin,Metformin,tablet,oral,మెట్‌ఫార్మిన్,diabetes
+Glimepiride,Glimepiride,tablet,oral,గ్లైమెపిరైడ్,diabetes
+Amlodipine,Amlodipine,tablet,oral,ఆమ్లోడిపైన్,cardiac
+Telmisartan,Telmisartan,tablet,oral,టెల్మిసార్టన్,cardiac
+Atorvastatin,Atorvastatin,tablet,oral,అటార్వాస్టాటిన్,cardiac
+Aspirin,Aspirin,tablet,oral,యాస్పిరిన్,cardiac
+Clopidogrel,Clopidogrel,tablet,oral,క్లోపిడోగ్రెల్,cardiac
+Furosemide,Furosemide,tablet,oral,ఫ్యూరోసెమైడ్,cardiac
+Pantoprazole,Pantoprazole,tablet,oral,పాంటోప్రజోల్,gastrointestinal
+Paracetamol,Paracetamol,tablet,oral,పారాసిటమాల్,analgesic
+Amoxicillin,Amoxicillin,tablet,oral,అమాక్సిసిలిన్,infection
+Cefixime,Cefixime,tablet,oral,సెఫిక్సిమ్,infection
+Salbutamol,Salbutamol,inhaler,inhaled,సాల్బుటమాల్,respiratory
+Budesonide,Budesonide,inhaler,inhaled,బుడెసోనైడ్,respiratory
+Labetalol,Labetalol,tablet,oral,లాబెటలోల్,maternity

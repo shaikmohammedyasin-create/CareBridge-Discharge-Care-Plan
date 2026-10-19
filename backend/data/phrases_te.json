@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "notice": "All Telugu phrases generated herein are UNREVIEWED hackathon draft phrases. They must be formally reviewed by a native Telugu clinical linguist before any real-world patient release.",
+    "unreviewed_by_native_speaker": true
+  },
+  "headers": {
+    "care_plan": "సంరక్షణ ప్రణాళిక (CARE PLAN)",
+    "patient_info": "రోగి వివరాలు",
+    "medicines": "మీరు వాడవలసిన మందులు",
+    "warning_signs": "ఈ క్రింది లక్షణాలు కనిపిస్తే వెంటనే ఆసుపత్రికి వెళ్ళండి",
+    "diet": "ఆహార నియమాలు",
+    "activity": "విశ్రాంతి మరియు వ్యాయామం",
+    "follow_up": "తదుపరి సందర్శన"
+  },
+  "templates": {
+    "medicine_line": "{name} {dose}: {frequency}{timing}{duration}.",
+    "follow_up_line": "{date} నాడు {department} కు {purpose} కొరకు రండి.",
+    "follow_up_no_dept": "{date} నాడు తప్పనిసరిగా ఫాలో-అప్‌కు రండి.",
+    "warning_line": "{text} ఉంటే వెంటనే అత్యవసర వైద్య సహాయం పొందండి.",
+    "diet_line": "{text}.",
+    "activity_line": "{text}."
+  },
+  "common_warnings": {
+    "chest pain": "తీవ్రమైన ఛాతీ నొప్పి లేదా గుండె బరువుగా అనిపించడం",
+    "severe dizziness": "తీవ్రమైన తలతిరుగుడు లేదా స్పృహ తప్పడం",
+    "shortness of breath": "శ్వాస తీసుకోవడంలో తీవ్రమైన ఇబ్బంది",
+    "high fever": "101 డిగ్రీల కంటే ఎక్కువ తీవ్రమైన జ్వరం",
+    "persistent vomiting": "ఎడతెగని వాంతులు లేదా నీరు కూడా తాగలేకపోవడం",
+    "bleeding": "ఆగని రక్తస్రావం లేదా దగ్గు/మలంలో రక్తం పడటం",
+    "wound redness": "గాయం వద్ద వాపు, ఎరుపుదనం లేదా చీము రావడం"
+  },
+  "common_diet": {
+    "low salt diet": "తక్కువ ఉప్పుతో కూడిన ఆహారం తీసుకోండి; ఊరగాయలు, అప్పడాలు మానండి",
+    "diabetic diet": "మధుమేహం ఆహార నియమాలు పాటించండి; చక్కెర, స్వీట్లు తీసుకోకండి",
+    "soft diet": "తేలికగా జీర్ణమయ్యే మెత్తని ఆహారం మాత్రమే తీసుకోండి",
+    "high protein diet": "పప్పుధాన్యాలు, గుడ్లు వంటి ప్రొటీన్లు ఉన్న ఆహారం తీసుకోండి",
+    "adequate hydration": "వైద్యులు సూచించిన మేరకు తగినంత శుభ్రమైన నీరు త్రాగండి"
+  },
+  "common_activity": {
+    "avoid heavy lifting": "4 వారాల వరకు ఎటువంటి బరువైన పనులు లేదా బరువులు ఎత్తకండి",
+    "bed rest": "3 రోజుల పాటు పూర్తి బెడ్ రెస్ట్ తీసుకోండి; శ్రమతో కూడిన పనులు చేయకండి",
+    "deep breathing exercises": "రోజూ 3 సార్లు నెమ్మదిగా శ్వాస వ్యాయామాలు చేయండి",
+    "regular walking": "మీకు వీలైనంత వరకు రోజూ రెండుసార్లు 15 నిమిషాలు నెమ్మదిగా నడవండి"
+  }
+}

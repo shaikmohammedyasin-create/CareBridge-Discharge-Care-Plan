@@ -1,0 +1,41 @@
+{
+  "headers": {
+    "care_plan": "CARE PLAN",
+    "patient_info": "PATIENT DETAILS",
+    "medicines": "YOUR MEDICINES",
+    "warning_signs": "GO TO THE HOSPITAL AT ONCE IF",
+    "diet": "WHAT TO EAT AND AVOID",
+    "activity": "ACTIVITY AND REST",
+    "follow_up": "YOUR NEXT VISITS"
+  },
+  "templates": {
+    "medicine_line": "{name} {dose}: take {frequency}{timing}{duration}.",
+    "follow_up_line": "Visit {department} on {date} for {purpose}.",
+    "follow_up_no_dept": "Come for follow-up on {date}.",
+    "warning_line": "Seek emergency medical help if you experience {text}.",
+    "diet_line": "{text}.",
+    "activity_line": "{text}."
+  },
+  "common_warnings": {
+    "chest pain": "severe chest pain or pressure",
+    "severe dizziness": "severe dizziness or fainting",
+    "shortness of breath": "difficulty breathing or shortness of breath",
+    "high fever": "high fever above 101 F",
+    "persistent vomiting": "persistent vomiting or unable to keep fluids down",
+    "bleeding": "unusual bleeding or blood in cough or stool",
+    "wound redness": "increasing redness, swelling, or discharge from wound site"
+  },
+  "common_diet": {
+    "low salt diet": "Follow a low salt diet; avoid pickles, papad, and salted snacks",
+    "diabetic diet": "Follow a diabetic diet; avoid sugar, sweets, and refined carbohydrates",
+    "soft diet": "Eat soft, easily digestible food for the next few days",
+    "high protein diet": "Eat protein-rich foods such as dal, eggs, and boiled pulses",
+    "adequate hydration": "Drink plenty of clean water throughout the day unless restricted"
+  },
+  "common_activity": {
+    "avoid heavy lifting": "Avoid lifting heavy objects for 4 weeks",
+    "bed rest": "Strict bed rest for 3 days; avoid exertion",
+    "deep breathing exercises": "Practice gentle deep breathing exercises 3 times daily",
+    "regular walking": "Take light 15-minute walks twice daily as tolerated"
+  }
+}

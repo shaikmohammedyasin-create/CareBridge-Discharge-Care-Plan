@@ -1,0 +1,209 @@
+[
+  {
+    "id": 1,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Ramesh Kumar Age: 52\nDiagnosis: Type 2 Diabetes Mellitus\nRx:\nTab Metformin 500 mg BD pc x 30 days\nTab Glimepiride 1 mg OD ac x 30 days\nFollow-up: Review in Endocrine OPD on 26/10/2026\nWarning signs: severe dizziness, sweating\nDiet: diabetic diet",
+    "expected_medicines": [
+      {"name_generic": "Metformin", "dose": "500 mg", "frequency_code": "BD"},
+      {"name_generic": "Glimepiride", "dose": "1 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-10-26"]
+  },
+  {
+    "id": 2,
+    "category": "cardiac",
+    "summary": "HOSPITAL DISCHARGE CARD\nDiagnosis: Essential Hypertension\nMedications:\nTab Amlodipine 5 mg OD x 30 days\nTab Telmisartan 40 mg OD x 30 days\nTab Atorvastatin 20 mg HS x 30 days\nReview OPD: 15/11/2026\nWarning signs: chest pain, shortness of breath\nDiet: low salt diet",
+    "expected_medicines": [
+      {"name_generic": "Amlodipine", "dose": "5 mg", "frequency_code": "OD"},
+      {"name_generic": "Telmisartan", "dose": "40 mg", "frequency_code": "OD"},
+      {"name_generic": "Atorvastatin", "dose": "20 mg", "frequency_code": "HS"}
+    ],
+    "expected_dates": ["2026-11-15"]
+  },
+  {
+    "id": 3,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY - GENERAL SURGERY\nPost Laparoscopic Appendectomy\nDischarge Medications:\nTab Augmentin 625 mg BD pc x 5 days\nTab Paracetamol 650 mg TDS pc x 3 days\nTab Pantoprazole 40 mg OD ac x 7 days\nReview in Surgical OPD on 24/10/2026 for suture inspection\nWarning signs: high fever, wound redness, persistent vomiting\nActivity: avoid heavy lifting",
+    "expected_medicines": [
+      {"name_generic": "Amoxicillin and Potassium Clavulanate", "dose": "625 mg", "frequency_code": "BD"},
+      {"name_generic": "Paracetamol", "dose": "650 mg", "frequency_code": "TDS"},
+      {"name_generic": "Pantoprazole", "dose": "40 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-10-24"]
+  },
+  {
+    "id": 4,
+    "category": "respiratory",
+    "summary": "DISCHARGE NOTE\nDiagnosis: Acute Bronchial Asthma Exacerbation\nAdvice on Discharge:\nInhaler Salbutamol 100 mcg SOS\nTab Montelukast 10 mg HS x 14 days\nTab Deriphyllin 150 mg BD pc x 7 days\nNext Visit: Respiratory OPD on 02/11/2026\nWarning signs: shortness of breath, chest tightness",
+    "expected_medicines": [
+      {"name_generic": "Salbutamol", "dose": "100 mcg", "frequency_code": "SOS"},
+      {"name_generic": "Montelukast", "dose": "10 mg", "frequency_code": "HS"},
+      {"name_generic": "Theophylline and Etophylline", "dose": "150 mg", "frequency_code": "BD"}
+    ],
+    "expected_dates": ["2026-11-02"]
+  },
+  {
+    "id": 5,
+    "category": "maternity",
+    "summary": "POSTNATAL DISCHARGE SUMMARY\nFTND Male baby\nDischarge Medications:\nTab Folvite 5 mg OD pc x 30 days\nTab Shelcal 500 mg BD pc x 30 days\nTab Orofer-XT 100 mg OD pc x 30 days\nReview in Maternity OPD on 28/10/2026\nWarning signs: heavy bleeding, high fever",
+    "expected_medicines": [
+      {"name_generic": "Folic Acid", "dose": "5 mg", "frequency_code": "OD"},
+      {"name_generic": "Calcium and Vitamin D3", "dose": "500 mg", "frequency_code": "BD"},
+      {"name_generic": "Ferrous Ascorbate and Folic Acid", "dose": "100 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-10-28"]
+  },
+  {
+    "id": 6,
+    "category": "cardiac",
+    "summary": "DISCHARGE PRESCRIPTION\nDiagnosis: Post PTCA\nMedication Table:\n| Drug | Dose | Frequency | Timing | Duration |\n| Tab Aspirin | 75 mg | OD | after food | 90 days |\n| Tab Clopidogrel | 75 mg | OD | after food | 90 days |\n| Tab Atorva | 40 mg | HS | at bedtime | 90 days |\nFollow-up: Cardiology OPD on 10/11/2026\nWarning signs: chest pain, bleeding",
+    "expected_medicines": [
+      {"name_generic": "Aspirin", "dose": "75 mg", "frequency_code": "OD"},
+      {"name_generic": "Clopidogrel", "dose": "75 mg", "frequency_code": "OD"},
+      {"name_generic": "Atorvastatin", "dose": "40 mg", "frequency_code": "HS"}
+    ],
+    "expected_dates": ["2026-11-10"]
+  },
+  {
+    "id": 7,
+    "category": "diabetes",
+    "summary": "DEPARTMENT OF MEDICINE\nDischarge Summary\nTab Glycomet 500 mg BD pc x 60 days\nTab Januvia 100 mg OD pc x 60 days\nReview: Follow-up OPD on 20/11/2026\nWarning signs: severe dizziness",
+    "expected_medicines": [
+      {"name_generic": "Metformin", "dose": "500 mg", "frequency_code": "BD"},
+      {"name_generic": "Sitagliptin", "dose": "100 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-11-20"]
+  },
+  {
+    "id": 8,
+    "category": "infection",
+    "summary": "DEPARTMENT OF INFECTIOUS DISEASES\nDischarge Summary\nTab Zifi 200 mg BD pc x 5 days\nTab Calpol 500 mg TDS pc x 3 days\nTab Pantocid 40 mg OD ac x 5 days\nReview in Medical OPD on 27/10/2026\nWarning signs: high fever, persistent vomiting",
+    "expected_medicines": [
+      {"name_generic": "Cefixime", "dose": "200 mg", "frequency_code": "BD"},
+      {"name_generic": "Paracetamol", "dose": "500 mg", "frequency_code": "TDS"},
+      {"name_generic": "Pantoprazole", "dose": "40 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-10-27"]
+  },
+  {
+    "id": 9,
+    "category": "respiratory",
+    "summary": "PULMONARY MEDICINE DISCHARGE\nTab Azithral 500 mg OD pc x 3 days\nTab Deriphyllin 300 mg BD pc x 7 days\nReview OPD: 30/10/2026\nWarning signs: difficulty breathing\nDiet: adequate hydration",
+    "expected_medicines": [
+      {"name_generic": "Azithromycin", "dose": "500 mg", "frequency_code": "OD"},
+      {"name_generic": "Theophylline and Etophylline", "dose": "300 mg", "frequency_code": "BD"}
+    ],
+    "expected_dates": ["2026-10-30"]
+  },
+  {
+    "id": 10,
+    "category": "ortho",
+    "summary": "ORTHOPEDIC DISCHARGE SUMMARY\nDiagnosis: Right Ankle Sprain\nTab Voveran 50 mg BD pc x 5 days\nTab Paracetamol 650 mg TDS pc x 5 days\nTab Pan 40 mg OD ac x 7 days\nReview in Ortho OPD on 05/11/2026\nActivity: bed rest",
+    "expected_medicines": [
+      {"name_generic": "Diclofenac", "dose": "50 mg", "frequency_code": "BD"},
+      {"name_generic": "Paracetamol", "dose": "650 mg", "frequency_code": "TDS"},
+      {"name_generic": "Pantoprazole", "dose": "40 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-11-05"]
+  },
+  {
+    "id": 11,
+    "category": "cardiac",
+    "summary": "CARDIOLOGY DISCHARGE SLIP\nTab Telma 40 mg OD pc x 30 days\nTab Lasix 20 mg OD pc x 15 days\nNext Visit: OPD 12/11/2026\nDiet: low salt diet\nWarning signs: chest pain",
+    "expected_medicines": [
+      {"name_generic": "Telmisartan", "dose": "40 mg", "frequency_code": "OD"},
+      {"name_generic": "Furosemide", "dose": "20 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-11-12"]
+  },
+  {
+    "id": 12,
+    "category": "maternity",
+    "summary": "OBSTETRICS DISCHARGE SUMMARY\nTab Labetalol 100 mg BD pc x 14 days\nTab Shelcal 500 mg OD pc x 30 days\nFollow-up: Maternity OPD 04/11/2026\nWarning signs: severe headache, blurred vision",
+    "expected_medicines": [
+      {"name_generic": "Labetalol", "dose": "100 mg", "frequency_code": "BD"},
+      {"name_generic": "Calcium and Vitamin D3", "dose": "500 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-11-04"]
+  },
+  {
+    "id": 13,
+    "category": "gastro",
+    "summary": "GASTROENTEROLOGY DISCHARGE\nCap Omez 20 mg BD ac x 14 days\nTab Emeset 4 mg TDS pc x 3 days\nReview: OPD on 29/10/2026\nDiet: soft diet\nWarning signs: persistent vomiting",
+    "expected_medicines": [
+      {"name_generic": "Omeprazole", "dose": "20 mg", "frequency_code": "BD"},
+      {"name_generic": "Ondansetron", "dose": "4 mg", "frequency_code": "TDS"}
+    ],
+    "expected_dates": ["2026-10-29"]
+  },
+  {
+    "id": 14,
+    "category": "diabetes",
+    "summary": "DISCHARGE SHEET\nTab Forxiga 10 mg OD pc x 30 days\nTab Metformin 1000 mg BD pc x 30 days\nFollow-up Review: 18/11/2026\nDiet: diabetic diet",
+    "expected_medicines": [
+      {"name_generic": "Dapagliflozin", "dose": "10 mg", "frequency_code": "OD"},
+      {"name_generic": "Metformin", "dose": "1000 mg", "frequency_code": "BD"}
+    ],
+    "expected_dates": ["2026-11-18"]
+  },
+  {
+    "id": 15,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nTab Norvasc 5 mg OD x 30 days\nTab Tenormin 50 mg OD x 30 days\nReview OPD: 22/11/2026\nDiet: low salt diet",
+    "expected_medicines": [
+      {"name_generic": "Amlodipine", "dose": "5 mg", "frequency_code": "OD"},
+      {"name_generic": "Atenolol", "dose": "50 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-11-22"]
+  },
+  {
+    "id": 16,
+    "category": "respiratory",
+    "summary": "RESPIRATORY CARE DISCHARGE\nTab Montair 10 mg HS x 30 days\nInhaler Budecort 200 mcg BD\nFollow-up OPD: 08/11/2026\nWarning signs: shortness of breath",
+    "expected_medicines": [
+      {"name_generic": "Montelukast", "dose": "10 mg", "frequency_code": "HS"},
+      {"name_generic": "Budesonide", "dose": "200 mcg", "frequency_code": "BD"}
+    ],
+    "expected_dates": ["2026-11-08"]
+  },
+  {
+    "id": 17,
+    "category": "pain",
+    "summary": "SURGICAL DAY CARE DISCHARGE\nTab Ultracet 325 mg TDS pc x 3 days\nTab Pantoprazole 40 mg OD ac x 5 days\nReview in Surgical OPD on 25/10/2026\nActivity: bed rest",
+    "expected_medicines": [
+      {"name_generic": "Tramadol and Paracetamol", "dose": "325 mg", "frequency_code": "TDS"},
+      {"name_generic": "Pantoprazole", "dose": "40 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-10-25"]
+  },
+  {
+    "id": 18,
+    "category": "cardiac",
+    "summary": "CARDIAC CLINIC SUMMARY\nTab Deplatt 75 mg OD pc x 30 days\nTab Storvas 20 mg HS x 30 days\nReview: 14/11/2026 in OPD\nWarning signs: chest pain",
+    "expected_medicines": [
+      {"name_generic": "Clopidogrel", "dose": "75 mg", "frequency_code": "OD"},
+      {"name_generic": "Atorvastatin", "dose": "20 mg", "frequency_code": "HS"}
+    ],
+    "expected_dates": ["2026-11-14"]
+  },
+  {
+    "id": 19,
+    "category": "infection",
+    "summary": "CLINICAL DISCHARGE ADVICE\nTab Moxikind-CV 625 mg BD pc x 7 days\nTab Dolo 650 mg SOS x 5 days\nNext appointment: 31/10/2026 OPD\nWarning signs: high fever",
+    "expected_medicines": [
+      {"name_generic": "Amoxicillin and Potassium Clavulanate", "dose": "625 mg", "frequency_code": "BD"},
+      {"name_generic": "Paracetamol", "dose": "650 mg", "frequency_code": "SOS"}
+    ],
+    "expected_dates": ["2026-10-31"]
+  },
+  {
+    "id": 20,
+    "category": "maternity",
+    "summary": "POSTNATAL CARE DISCHARGE\nTab Gestofit 200 mg HS x 14 days\nTab Orofer-XT 100 mg OD pc x 30 days\nReview in Maternity OPD on 06/11/2026\nDiet: high protein diet",
+    "expected_medicines": [
+      {"name_generic": "Progesterone", "dose": "200 mg", "frequency_code": "HS"},
+      {"name_generic": "Ferrous Ascorbate and Folic Acid", "dose": "100 mg", "frequency_code": "OD"}
+    ],
+    "expected_dates": ["2026-11-06"]
+  }
+]

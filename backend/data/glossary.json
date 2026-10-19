@@ -1,0 +1,119 @@
+{
+  "abbreviations": {
+    "OD": {
+      "plain_en": "Once a day",
+      "plain_te": "రోజుకు 1 సారి",
+      "code": "OD",
+      "category": "frequency",
+      "is_ambiguous": true,
+      "ambiguity_note": "OD also means 'right eye' (oculus dexter) for eye drops. If form/route is ophthalmic, requires nurse review.",
+      "is_unreviewed_telugu": false
+    },
+    "QD": {
+      "plain_en": "Once a day",
+      "plain_te": "రోజుకు 1 సారి",
+      "code": "OD",
+      "category": "frequency",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "BD": {
+      "plain_en": "2 times a day (morning and night)",
+      "plain_te": "రోజుకు 2 సార్లు (ఉదయం, రాత్రి)",
+      "code": "BD",
+      "category": "frequency",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "BID": {
+      "plain_en": "2 times a day (morning and night)",
+      "plain_te": "రోజుకు 2 సార్లు (ఉదయం, రాత్రి)",
+      "code": "BD",
+      "category": "frequency",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "TDS": {
+      "plain_en": "3 times a day (morning, afternoon, night)",
+      "plain_te": "రోజుకు 3 సార్లు (ఉదయం, మధ్యాహ్నం, రాత్రి)",
+      "code": "TDS",
+      "category": "frequency",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "TID": {
+      "plain_en": "3 times a day (morning, afternoon, night)",
+      "plain_te": "రోజుకు 3 సార్లు (ఉదయం, మధ్యాహ్నం, రాత్రి)",
+      "code": "TDS",
+      "category": "frequency",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "QID": {
+      "plain_en": "4 times a day",
+      "plain_te": "రోజుకు 4 సార్లు",
+      "code": "QID",
+      "category": "frequency",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "HS": {
+      "plain_en": "At bedtime",
+      "plain_te": "నిద్రపోయే ముందు",
+      "code": "HS",
+      "category": "timing",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "PC": {
+      "plain_en": "after food",
+      "plain_te": "భోజనం తర్వాత",
+      "code": "PC",
+      "category": "timing",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "AC": {
+      "plain_en": "before food",
+      "plain_te": "భోజనానికి ముందు",
+      "code": "AC",
+      "category": "timing",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "WITH FOOD": {
+      "plain_en": "with food",
+      "plain_te": "భోజనంతో పాటు",
+      "code": "WF",
+      "category": "timing",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    },
+    "SOS": {
+      "plain_en": "Only when needed, as written",
+      "plain_te": "అవసరమైనప్పుడు మాత్రమే",
+      "code": "SOS",
+      "category": "frequency",
+      "is_ambiguous": true,
+      "ambiguity_note": "SOS indicates pro re nata / as needed; exact clinical trigger requires nurse review.",
+      "is_unreviewed_telugu": false
+    },
+    "PRN": {
+      "plain_en": "Only when needed, as written",
+      "plain_te": "అవసరమైనప్పుడు మాత్రమే",
+      "code": "SOS",
+      "category": "frequency",
+      "is_ambiguous": true,
+      "ambiguity_note": "PRN indicates as needed; requires nurse review for clinical indication.",
+      "is_unreviewed_telugu": false
+    },
+    "STAT": {
+      "plain_en": "Immediately once",
+      "plain_te": "వెంటనే ఒకసారి",
+      "code": "STAT",
+      "category": "frequency",
+      "is_ambiguous": false,
+      "is_unreviewed_telugu": false
+    }
+  }
+}
