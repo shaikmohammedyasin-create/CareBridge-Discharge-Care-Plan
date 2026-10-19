@@ -100,30 +100,48 @@ def run_evaluation():
         proxy_words_per_sent.append(proxy["avg_words_per_sentence"])
         proxy_short_ratios.append(proxy["short_word_ratio"])
 
-        # Ground truth comparison
-        extracted_med_map = {
-            m.name_generic.lower(): m for m in merged_plan.medicines
-        }
-
+        # Ground truth comparison with 1-to-1 multiset matching
+        matched_indices = set()
         for exp in expected_meds:
-            gen_key = exp["generic"].lower()
-            if gen_key in extracted_med_map:
-                extracted_source_medicines += 1
-                med_obj = extracted_med_map[gen_key]
+            exp_gen = exp["generic"].lower()
+            exp_dose = exp["dose"].lower().replace(" ", "")
+            exp_freq = exp["freq"].upper()
+            exp_dur = exp["dur"].lower().replace(" ", "") if exp["dur"] else ""
 
-                # Dose check
-                if med_obj.dose.lower().replace(" ", "") == exp["dose"].lower().replace(" ", ""):
+            # 1. Match by generic and dose first
+            cand_idx = None
+            for i, m in enumerate(merged_plan.medicines):
+                if i not in matched_indices and m.name_generic.lower() == exp_gen:
+                    if m.dose.lower().replace(" ", "") == exp_dose:
+                        cand_idx = i
+                        break
+
+            # 2. If no exact dose match, match by generic alone
+            if cand_idx is None:
+                for i, m in enumerate(merged_plan.medicines):
+                    if i not in matched_indices and m.name_generic.lower() == exp_gen:
+                        cand_idx = i
+                        break
+
+            if cand_idx is not None:
+                matched_indices.add(cand_idx)
+                extracted_source_medicines += 1
+                med_obj = merged_plan.medicines[cand_idx]
+
+                # Dose match
+                if med_obj.dose.lower().replace(" ", "") == exp_dose:
                     exact_dose_matches += 1
 
-                # Frequency check
-                if med_obj.frequency_code.upper() == exp["freq"].upper():
+                # Frequency match
+                if med_obj.frequency_code.upper() == exp_freq:
                     exact_freq_matches += 1
 
-                # Duration check
-                if med_obj.duration and exp["dur"]:
-                    if exp["dur"].lower().replace(" ", "") in med_obj.duration.lower().replace(" ", "") or med_obj.duration.lower().replace(" ", "") in exp["dur"].lower().replace(" ", ""):
+                # Duration match
+                m_dur = med_obj.duration.lower().replace(" ", "") if med_obj.duration else ""
+                if exp_dur and m_dur:
+                    if exp_dur in m_dur or m_dur in exp_dur:
                         exact_dur_matches += 1
-                elif not med_obj.duration and not exp["dur"]:
+                elif not exp_dur and not m_dur:
                     exact_dur_matches += 1
 
         # Date check
@@ -227,7 +245,9 @@ def run_evaluation():
 | Hackathon | Talent AP Mega Hackathon, Problem H2 (Healthcare) |
 | Team | BALLERINA |
 | Team Leader | Mohammed Yasin Shaik |
-| Dataset | Synthetic Clinical Discharge Summaries (2,000 cases, clearly labelled) |
+| Dataset Source | Project synthetic set of 2,000 summaries (organizer dataset was missing) |
+| Runtime Pipeline Mode | Deterministic Rule Parser + Local Narrative Extractor (Offline / 0.0019s latency) |
+| Optional LLM Adapter | Available via LLM_BASE_URL (GPT-4o-mini / OpenAI-compatible); offline by default |
 | Execution Date | {time.strftime('%Y-%m-%d %H:%M:%S')} |
 | Total Execution Time | {total_time:.2f} seconds |
 

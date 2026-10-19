@@ -103,3 +103,32 @@ Review: OPD 26/10/2026
     assert plan.medicines[1].name_generic == "Amlodipine"
     assert len(plan.follow_ups) == 1
     assert plan.follow_ups[0].date == "2026-10-26"
+
+
+def test_regression_duplicate_molecule_distinct_doses():
+    # Regression test from real Case #46: Multiple distinct doses of same molecule
+    text = """DISCHARGE SUMMARY
+Patient Name: Subba Reddy Age: 50
+Condition: Diabetes
+Medications:
+Tab Metformin 500 mg BD pc x 30 days
+Tab Januvia 100 mg OD pc x 30 days
+Tab Metformin 1000 mg BD pc x 60 days
+Follow-up: Review in Diabetic Clinic on 15/11/2026
+"""
+    plan = parse_rules(text)
+    assert len(plan.medicines) == 3
+
+    metformins = [m for m in plan.medicines if m.name_generic == "Metformin"]
+    assert len(metformins) == 2
+
+    # Verify both distinct doses and durations are extracted with valid non-overlapping spans
+    doses = {m.dose for m in metformins}
+    durations = {m.duration for m in metformins}
+    assert doses == {"500 mg", "1000 mg"}
+    assert durations == {"30 days", "60 days"}
+
+    # Spans must not overlap
+    m1, m2 = metformins[0], metformins[1]
+    assert m1.source_span[1] <= m2.source_span[0]
+
