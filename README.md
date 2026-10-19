@@ -80,6 +80,20 @@ Produces:
 
 ---
 
+## Related Work & Architectural Differences
+
+CareBridge was architected with a strict "faithfulness over fluency" medical safety philosophy. The table below compares CareBridge against related open-source clinical discharge and patient-instruction systems:
+
+| Repository / Project | What It Does | What CareBridge Does Differently |
+|---|---|---|
+| [`tharunya0105-afk/medbridge`](https://github.com/tharunya0105-afk/medbridge) | Discharge parsing, medication extraction, deterministic safety rules, English + Tamil at Grade 6, teach-back quiz. | CareBridge provides exact character-level source spans (`[start, end]`), locked protected tokens (doses/dates/drugs un-mangled), dual round-trip diff verification on English and Telugu, an interactive clinician review queue, and a zero-hard-error release gate. |
+| [`charvimaurya/discharge-letter-check`](https://github.com/charvimaurya/discharge-letter-check) | JSON schema for extracted clinical instructions, uncertainty markers, `needs_confirmation` flags. | CareBridge combines deterministic rule parsing for dosage tables with narrative extraction, enforces a two-layer verification diff, and builds a printable A4 fridge sheet. *(Adopted: CareBridge incorporates `needs_confirmation: bool` on medication schema to flag items requiring nurse verification).* |
+| [`gd007/MediSimplifier`](https://github.com/gd007/MediSimplifier) | Readability evaluation (Flesch-Kincaid grade) for discharge text simplification. | Rather than relying on unconstrained LLM rewrites (which risk medical hallucination), CareBridge generates patient text from reviewed templates (achieving Class 4.3 grade) and evaluates Telugu using a calibrated linguistic proxy. |
+| [`AI-in-Health/Patient-Instructions`](https://github.com/AI-in-Health/Patient-Instructions) (NeurIPS 2022) | Faithfulness-focused clinical patient instruction generation benchmarking. | CareBridge enforces Non-Negotiable Rule 1 (the AI never writes free text for the patient) and backs every claim with deterministic rule authority and round-trip verification. |
+| [`parthha12/mediquery`](https://github.com/parthha12/mediquery) | Deterministic ETL with source tracing and human clinical review. | CareBridge provides a complete bilingual clinical delivery suite: locked Telugu translation with transliteration, printable ReportLab fridge sheet with embedded font, 7-day timetable, and audio accessibility. |
+
+---
+
 ## Demo Support
 
 Follow `scripts/demo.md` for a 90-second judge presentation. Use the in-app **"Plant Tampered Error"** demo switch to demonstrate the safety verifier instantly blocking a tampered dose and routing it to the nurse review queue.
