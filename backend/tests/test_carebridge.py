@@ -1,4 +1,4 @@
-from app.extractor import extract
+from app.rules_parser import parse_rules
 from app.verifier import verify
 
 SUMMARY = """Discharge Summary
@@ -10,18 +10,19 @@ Diet: low salt diet
 """
 
 def test_extract():
-    plan = extract(SUMMARY)
-    assert len(plan.medications) == 2
-    assert plan.medications[0].name == "Metformin"
+    plan = parse_rules(SUMMARY)
+    assert len(plan.medicines) == 2
+    assert plan.medicines[0].name_generic == "Metformin"
     assert plan.follow_ups[0].date == "2026-10-26"
 
 def test_verify():
-    plan = extract(SUMMARY)
+    plan = parse_rules(SUMMARY)
     result = verify(SUMMARY, plan)
     assert result.checked_fields >= 4
 
 def test_tampered_plan_is_detected():
-    plan = extract(SUMMARY)
-    plan.medications[0].dose = "1000 mg"
+    plan = parse_rules(SUMMARY)
+    plan.medicines[0].dose = "1000 mg"
     result = verify(SUMMARY, plan)
     assert not result.passed
+

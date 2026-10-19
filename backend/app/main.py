@@ -225,3 +225,50 @@ def review_action(plan_id: str, req: ReviewActionRequest):
 
     record["status"] = "released" if req.action == "accept" else "edited_and_released"
     return {"status": "success", "action": req.action, "plan_id": plan_id}
+
+
+@app.get("/api/plans/{plan_id}/timetable")
+def get_plan_timetable(plan_id: str):
+    # Returns 7-day medication administration calendar
+    from .timetable import generate_7day_timetable
+    record = STORED_PLANS.get(plan_id)
+    if not record:
+        raise HTTPException(404, f"Care plan '{plan_id}' not found.")
+    plan = CarePlan(**record["plan"])
+    return generate_7day_timetable(plan)
+
+
+@app.get("/api/plans/{plan_id}/audio")
+def get_plan_audio(plan_id: str, lang: str = Query(default="en")):
+    # Returns spoken audio for verified text
+    from .audio import generate_audio_bytes
+    record = STORED_PLANS.get(plan_id)
+    if not record:
+        raise HTTPException(404, f"Care plan '{plan_id}' not found.")
+
+    text = record["rendered"]["telugu"] if lang.startswith("te") else record["rendered"]["english"]
+    audio_bytes = generate_audio_bytes(text, lang)
+    if not audio_bytes:
+        # Fallback response for client-side TTS
+        return {
+            "status": "client_synthesis_fallback",
+            "lang": lang,
+            "text": text,
+            "notice": "Backend gTTS offline; client-side speech synthesis available in browser.",
+        }
+
+    return Response(
+        content=audio_bytes,
+        media_type="audio/mpeg",
+        headers={"Content-Disposition": f"inline; filename=carebridge-{plan_id}-{lang}.mp3"},
+    )
+
+
+@app.get("/api/review-log")
+def get_review_log():
+    # Complete audit trail of nurse decisions
+    return {
+        "count": len(REVIEW_LOG),
+        "logs": REVIEW_LOG,
+    }
+
