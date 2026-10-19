@@ -5,8 +5,8 @@
       "plain_te": "రోజుకు 1 సారి",
       "code": "OD",
       "category": "frequency",
-      "is_ambiguous": true,
-      "ambiguity_note": "OD also means 'right eye' (oculus dexter) for eye drops. If form/route is ophthalmic, requires nurse review.",
+      "is_ambiguous": false,
+      "ambiguity_note": "OD is once daily for oral medications. If route is ophthalmic (eye drops), flagged as oculus dexter.",
       "is_unreviewed_telugu": false
     },
     "QD": {
@@ -94,8 +94,8 @@
       "plain_te": "అవసరమైనప్పుడు మాత్రమే",
       "code": "SOS",
       "category": "frequency",
-      "is_ambiguous": true,
-      "ambiguity_note": "SOS indicates pro re nata / as needed; exact clinical trigger requires nurse review.",
+      "is_ambiguous": false,
+      "ambiguity_note": "SOS indicates as needed; requires clear symptom trigger.",
       "is_unreviewed_telugu": false
     },
     "PRN": {
@@ -103,8 +103,8 @@
       "plain_te": "అవసరమైనప్పుడు మాత్రమే",
       "code": "SOS",
       "category": "frequency",
-      "is_ambiguous": true,
-      "ambiguity_note": "PRN indicates as needed; requires nurse review for clinical indication.",
+      "is_ambiguous": false,
+      "ambiguity_note": "PRN indicates as needed.",
       "is_unreviewed_telugu": false
     },
     "STAT": {

@@ -21,7 +21,7 @@ from .schema import (
 # Regex patterns for clinical elements
 DOSE_PATTERN = r"(\d+(?:\.\d+)?\s*(?:mg|mcg|g|ml|units?|iu|puffs?|drops?|tablets?|capsules?|%))"
 FREQ_PATTERN = r"\b(OD|QD|BD|BID|TDS|TID|QID|Q4H|Q6H|Q8H|HS|SOS|PRN|STAT|once daily|twice daily|thrice daily)\b"
-TIMING_PATTERN = r"\b(pc|ac|after food|before food|with food|at bedtime|empty stomach|post meals?|pre meals?)\b"
+TIMING_PATTERN = r"\b(pc|ac|after food|before food|with food|at bedtime|empty stomach|post meals?|pre meals?|inhalation|topical|oral|subcutaneous|when needed)\b"
 DURATION_PATTERN = r"(?:(?:x|for)\s*)?(\d+)\s*(days?|weeks?|months?)\b"
 
 # Matches linear prescription lines: e.g. "Tab Metformin 500 mg BD pc x 30 days"
@@ -35,7 +35,7 @@ LINEAR_MED_RE = re.compile(
     + r"(?:\s+"
     + TIMING_PATTERN
     + r")?"
-    + r"(?:\s+"
+    + r"(?:[^\n\d]*?"
     + DURATION_PATTERN
     + r")?",
     re.IGNORECASE,
