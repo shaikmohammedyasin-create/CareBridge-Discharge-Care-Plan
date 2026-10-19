@@ -9,8 +9,8 @@
 | Dataset Source | Project synthetic set of 2,000 summaries (organizer dataset was missing) |
 | Runtime Pipeline Mode | Deterministic Rule Parser + Local Narrative Extractor (Offline / 0.0019s latency) |
 | Optional LLM Adapter | Available via LLM_BASE_URL (GPT-4o-mini / OpenAI-compatible); offline by default |
-| Execution Date | 2026-10-19 08:54:04 |
-| Total Execution Time | 1.38 seconds |
+| Execution Date | 2026-10-19 09:13:01 |
+| Total Execution Time | 1.45 seconds |
 
 ---
 

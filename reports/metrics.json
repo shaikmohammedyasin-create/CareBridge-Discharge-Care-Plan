@@ -1,7 +1,7 @@
 {
   "dataset_name": "Synthetic Clinical Evaluation Set (2,000 summaries)",
   "total_summaries": 2000,
-  "batch_runtime_seconds": 1.38,
+  "batch_runtime_seconds": 1.45,
   "metrics": {
     "medicine_recall_pct": 100.0,
     "dose_exact_match_pct": 100.0,
