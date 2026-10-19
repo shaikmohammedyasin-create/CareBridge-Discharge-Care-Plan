@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "name": "Ramesh Kumar",
+    "age": 52,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Ramesh Kumar Age: 52\nCondition: Diabetes\nMedications:\nTab Metformin 500 mg BD pc x 30 days\nTab Glimepiride 1 mg OD ac x 30 days\nFollow-up: Review in OPD on 26/10/2026\nWarning signs: severe dizziness, sweating\nDiet: diabetic diet, avoid sweets\nActivity: regular walking",
+    "expected_med_count": 2,
+    "expected_date": "2026-10-26"
+  },
+  {
+    "id": 2,
+    "name": "Sita Devi",
+    "age": 61,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Sita Devi Age: 61\nCondition: Diabetes\nMedications:\nTab Glycomet 1000 mg BD pc x 60 days\nTab Januvia 100 mg OD pc x 60 days\nFollow-up: Review in OPD on 15/11/2026\nWarning signs: blurred vision, tremors\nDiet: diabetic diet\nActivity: brisk walk 20 mins",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-15"
+  },
+  {
+    "id": 3,
+    "name": "Abdul Rahman",
+    "age": 48,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Abdul Rahman Age: 48\nCondition: Diabetes\nMedications:\nTab Forxiga 10 mg OD pc x 30 days\nTab Metformin 500 mg BD pc x 30 days\nFollow-up: Review in OPD on 05/11/2026\nWarning signs: recurrent dizziness, nausea\nDiet: low carbohydrate diet\nActivity: daily light exercise",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-05"
+  },
+  {
+    "id": 4,
+    "name": "Lakshmi Bai",
+    "age": 55,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Lakshmi Bai Age: 55\nCondition: Diabetes\nMedications:\nTab Amaryl 2 mg OD ac x 30 days\nTab Metformin 850 mg BD pc x 30 days\nFollow-up: Review in OPD on 12/11/2026\nWarning signs: profuse sweating, palpitations\nDiet: diabetic diet\nActivity: avoid exertion",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-12"
+  },
+  {
+    "id": 5,
+    "name": "Venkatesh Rao",
+    "age": 64,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Venkatesh Rao Age: 64\nCondition: Diabetes\nMedications:\nTab Galvus 50 mg BD pc x 30 days\nTab Metformin 500 mg BD pc x 30 days\nFollow-up: Review in OPD on 20/11/2026\nWarning signs: extreme thirst, confusion\nDiet: strict sugar restriction\nActivity: regular walking",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-20"
+  },
+  {
+    "id": 6,
+    "name": "Kavitha Reddy",
+    "age": 46,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Kavitha Reddy Age: 46\nCondition: Diabetes\nMedications:\nTab Metformin 500 mg BD pc x 45 days\nTab Glimepiride 2 mg OD ac x 45 days\nFollow-up: Review in OPD on 18/11/2026\nWarning signs: lightheadedness, shivering\nDiet: diabetic diet\nActivity: light walking",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-18"
+  },
+  {
+    "id": 7,
+    "name": "Mohan Das",
+    "age": 58,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Mohan Das Age: 58\nCondition: Diabetes\nMedications:\nTab Januvia 50 mg OD pc x 30 days\nTab Metformin 1000 mg BD pc x 30 days\nFollow-up: Review in OPD on 25/11/2026\nWarning signs: severe weakness, dizziness\nDiet: diabetic diet, avoid simple sugars\nActivity: brisk walk 15 mins",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-25"
+  },
+  {
+    "id": 8,
+    "name": "Anasuya Devi",
+    "age": 63,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Anasuya Devi Age: 63\nCondition: Diabetes\nMedications:\nTab Forxiga 10 mg OD pc x 30 days\nTab Glycomet 500 mg TDS pc x 30 days\nFollow-up: Review in OPD on 28/11/2026\nWarning signs: frequent urination, dehydration\nDiet: diabetic diet, drink adequate water\nActivity: regular walking",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-28"
+  },
+  {
+    "id": 9,
+    "name": "Prasad Raju",
+    "age": 50,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Prasad Raju Age: 50\nCondition: Diabetes\nMedications:\nTab Amaryl 1 mg OD ac x 30 days\nTab Januvia 100 mg OD pc x 30 days\nFollow-up: Review in OPD on 10/11/2026\nWarning signs: cold sweats, tremors\nDiet: small frequent meals, diabetic diet\nActivity: morning walks",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-10"
+  },
+  {
+    "id": 10,
+    "name": "Saraswathi Amma",
+    "age": 67,
+    "category": "diabetes",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Saraswathi Amma Age: 67\nCondition: Diabetes\nMedications:\nTab Metformin 500 mg BD pc x 60 days\nTab Galvus 50 mg BD pc x 60 days\nFollow-up: Review in OPD on 30/11/2026\nWarning signs: drowsiness, confusion\nDiet: diabetic diet\nActivity: light activity",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-30"
+  },
+  {
+    "id": 11,
+    "name": "Krishna Murthy",
+    "age": 60,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Krishna Murthy Age: 60\nCondition: Cardiac\nMedications:\nTab Amlodipine 5 mg OD pc x 30 days\nTab Telmisartan 40 mg OD pc x 30 days\nTab Atorvastatin 20 mg HS at bedtime x 30 days\nFollow-up: Review in OPD on 14/11/2026\nWarning signs: chest pain, breathlessness\nDiet: low salt diet\nActivity: avoid strenuous activity",
+    "expected_med_count": 3,
+    "expected_date": "2026-11-14"
+  },
+  {
+    "id": 12,
+    "name": "Subba Rao",
+    "age": 65,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Subba Rao Age: 65\nCondition: Cardiac\nMedications:\nTab Aspirin 75 mg OD pc x 90 days\nTab Clopidogrel 75 mg OD pc x 90 days\nTab Atorva 40 mg HS at bedtime x 90 days\nFollow-up: Review in OPD on 22/11/2026\nWarning signs: chest pain, bleeding gums\nDiet: low fat diet, low salt diet\nActivity: gentle walking",
+    "expected_med_count": 3,
+    "expected_date": "2026-11-22"
+  },
+  {
+    "id": 13,
+    "name": "Rajyalakshmi",
+    "age": 58,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Rajyalakshmi Age: 58\nCondition: Cardiac\nMedications:\nTab Telma 40 mg OD pc x 30 days\nTab Lasix 20 mg OD pc x 15 days\nFollow-up: Review in OPD on 16/11/2026\nWarning signs: swelling in legs, shortness of breath\nDiet: fluid restriction 1.5 liters, low salt diet\nActivity: bed rest as needed",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-16"
+  },
+  {
+    "id": 14,
+    "name": "Narayana Swamy",
+    "age": 72,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Narayana Swamy Age: 72\nCondition: Cardiac\nMedications:\nTab Betaloc 25 mg BD pc x 30 days\nTab Amlong 5 mg OD pc x 30 days\nFollow-up: Review in OPD on 08/11/2026\nWarning signs: slow pulse, dizziness\nDiet: low salt diet\nActivity: avoid climbing stairs",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-08"
+  },
+  {
+    "id": 15,
+    "name": "Padmavathi",
+    "age": 62,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Padmavathi Age: 62\nCondition: Cardiac\nMedications:\nTab Deplatt 75 mg OD pc x 60 days\nTab Storvas 20 mg HS at bedtime x 60 days\nFollow-up: Review in OPD on 19/11/2026\nWarning signs: chest discomfort, shortness of breath\nDiet: low cholesterol diet, low salt diet\nActivity: light walking 10 mins",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-19"
+  },
+  {
+    "id": 16,
+    "name": "Appa Rao",
+    "age": 59,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Appa Rao Age: 59\nCondition: Cardiac\nMedications:\nTab Cresar 40 mg OD pc x 30 days\nTab Norvasc 5 mg OD pc x 30 days\nFollow-up: Review in OPD on 24/11/2026\nWarning signs: severe headache, blurred vision\nDiet: low salt diet\nActivity: moderate walking",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-24"
+  },
+  {
+    "id": 17,
+    "name": "Satyanarayana",
+    "age": 68,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Satyanarayana Age: 68\nCondition: Cardiac\nMedications:\nTab Tenormin 50 mg OD pc x 30 days\nTab Ecosprin 75 mg OD pc x 30 days\nFollow-up: Review in OPD on 27/11/2026\nWarning signs: chest heaviness, cold sweats\nDiet: low salt diet\nActivity: avoid heavy work",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-27"
+  },
+  {
+    "id": 18,
+    "name": "Girija Kumari",
+    "age": 54,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Girija Kumari Age: 54\nCondition: Cardiac\nMedications:\nTab Telmisartan 80 mg OD pc x 30 days\nTab Amlodipine 10 mg OD pc x 30 days\nFollow-up: Review in OPD on 06/11/2026\nWarning signs: dizziness on standing, fatigue\nDiet: low salt diet\nActivity: regular light walks",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-06"
+  },
+  {
+    "id": 19,
+    "name": "Ramanaiah",
+    "age": 66,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Ramanaiah Age: 66\nCondition: Cardiac\nMedications:\nTab Lasix 40 mg OD pc x 10 days\nTab Atorvastatin 10 mg HS at bedtime x 30 days\nFollow-up: Review in OPD on 11/11/2026\nWarning signs: breathlessness when lying flat, chest pain\nDiet: restrict salt and pickles\nActivity: adequate bed rest",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-11"
+  },
+  {
+    "id": 20,
+    "name": "Vijayalakshmi",
+    "age": 57,
+    "category": "cardiac",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Vijayalakshmi Age: 57\nCondition: Cardiac\nMedications:\nTab Deplatt 75 mg OD pc x 90 days\nTab Amlong 5 mg OD pc x 90 days\nFollow-up: Review in OPD on 29/11/2026\nWarning signs: chest tightness, bruising\nDiet: heart healthy diet, low salt diet\nActivity: light strolls",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-29"
+  },
+  {
+    "id": 21,
+    "name": "Srinivasa Rao",
+    "age": 45,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Srinivasa Rao Age: 45\nCondition: Respiratory\nMedications:\nInhaler Salbutamol 100 mcg SOS when needed x 30 days\nTab Montelukast 10 mg HS at bedtime x 30 days\nFollow-up: Review in OPD on 04/11/2026\nWarning signs: severe wheezing, shortness of breath\nDiet: avoid cold drinks\nActivity: avoid dust exposure",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-04"
+  },
+  {
+    "id": 22,
+    "name": "Bhanumathi",
+    "age": 52,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Bhanumathi Age: 52\nCondition: Respiratory\nMedications:\nInhaler Budecort 200 mcg BD inhalation x 30 days\nTab Deriphyllin 150 mg BD pc x 14 days\nFollow-up: Review in OPD on 13/11/2026\nWarning signs: chest tightness, persistent cough\nDiet: warm fluids, adequate hydration\nActivity: steam inhalation twice daily",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-13"
+  },
+  {
+    "id": 23,
+    "name": "Chandra Sekhar",
+    "age": 49,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Chandra Sekhar Age: 49\nCondition: Respiratory\nMedications:\nTab Azithral 500 mg OD pc x 5 days\nTab Deriphyllin 300 mg BD pc x 7 days\nFollow-up: Review in OPD on 03/11/2026\nWarning signs: high fever, yellow sputum\nDiet: plenty of warm water\nActivity: rest at home",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-03"
+  },
+  {
+    "id": 24,
+    "name": "Hemalatha",
+    "age": 38,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Hemalatha Age: 38\nCondition: Respiratory\nMedications:\nTab Montair 10 mg HS at bedtime x 15 days\nInhaler Salbutamol 100 mcg SOS when needed x 15 days\nFollow-up: Review in OPD on 17/11/2026\nWarning signs: inability to speak full sentences, severe breathlessness\nDiet: avoid cold foods\nActivity: breathing exercises",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-17"
+  },
+  {
+    "id": 25,
+    "name": "Nageswara Rao",
+    "age": 63,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Nageswara Rao Age: 63\nCondition: Respiratory\nMedications:\nInhaler Budecort 400 mcg BD inhalation x 60 days\nTab Deriphyllin 150 mg BD pc x 14 days\nFollow-up: Review in OPD on 21/11/2026\nWarning signs: blue lips or fingers, severe breathlessness\nDiet: nutritious warm diet\nActivity: avoid smoke and pollution",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-21"
+  },
+  {
+    "id": 26,
+    "name": "Sujatha",
+    "age": 41,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Sujatha Age: 41\nCondition: Respiratory\nMedications:\nTab Azithromycin 500 mg OD pc x 3 days\nTab Montelukast 10 mg HS at bedtime x 10 days\nFollow-up: Review in OPD on 09/11/2026\nWarning signs: worsening cough, high fever\nDiet: warm nutritious soup, soft diet\nActivity: adequate rest",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-09"
+  },
+  {
+    "id": 27,
+    "name": "Koteswara Rao",
+    "age": 56,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Koteswara Rao Age: 56\nCondition: Respiratory\nMedications:\nInhaler Asthalin 100 mcg SOS when needed x 30 days\nTab Deriphyllin 300 mg BD pc x 10 days\nFollow-up: Review in OPD on 18/11/2026\nWarning signs: severe breathlessness, chest congestion\nDiet: avoid oily and cold items\nActivity: avoid strenuous exercise",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-18"
+  },
+  {
+    "id": 28,
+    "name": "Radha Rani",
+    "age": 47,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Radha Rani Age: 47\nCondition: Respiratory\nMedications:\nInhaler Budecort 200 mcg BD inhalation x 30 days\nTab Montair 10 mg HS at bedtime x 30 days\nFollow-up: Review in OPD on 23/11/2026\nWarning signs: wheezing not relieved by inhaler, shortness of breath\nDiet: warm liquids\nActivity: deep breathing exercises",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-23"
+  },
+  {
+    "id": 29,
+    "name": "Tirupathi Rao",
+    "age": 51,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Tirupathi Rao Age: 51\nCondition: Respiratory\nMedications:\nTab Azithral 500 mg OD pc x 3 days\nInhaler Asthalin 100 mcg SOS when needed x 14 days\nFollow-up: Review in OPD on 07/11/2026\nWarning signs: chest pain on deep breath, high fever\nDiet: adequate hydration\nActivity: rest in well ventilated room",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-07"
+  },
+  {
+    "id": 30,
+    "name": "Anuradha",
+    "age": 43,
+    "category": "respiratory",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Anuradha Age: 43\nCondition: Respiratory\nMedications:\nTab Deriphyllin 150 mg BD pc x 14 days\nTab Montelukast 10 mg HS at bedtime x 14 days\nFollow-up: Review in OPD on 15/11/2026\nWarning signs: severe nighttime cough, breathlessness\nDiet: warm water intake\nActivity: avoid physical exertion",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-15"
+  },
+  {
+    "id": 31,
+    "name": "Suresh Babu",
+    "age": 36,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Suresh Babu Age: 36\nCondition: Post Op\nMedications:\nTab Augmentin 625 mg BD pc x 5 days\nTab Paracetamol 650 mg TDS pc x 3 days\nTab Pantoprazole 40 mg OD ac x 5 days\nFollow-up: Review in OPD on 24/10/2026\nWarning signs: wound redness, high fever, pus discharge\nDiet: high protein diet\nActivity: avoid heavy lifting for 4 weeks",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-24"
+  },
+  {
+    "id": 32,
+    "name": "Mallikarjun",
+    "age": 42,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Mallikarjun Age: 42\nCondition: Post Op\nMedications:\nTab Voveran 50 mg BD pc x 5 days\nTab Calpol 500 mg TDS pc x 3 days\nTab Pan 40 mg OD ac x 7 days\nFollow-up: Review in OPD on 28/10/2026\nWarning signs: severe wound pain, bleeding from dressing\nDiet: soft diet\nActivity: bed rest for 5 days",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-28"
+  },
+  {
+    "id": 33,
+    "name": "Ranganayakulu",
+    "age": 55,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Ranganayakulu Age: 55\nCondition: Post Op\nMedications:\nTab Ultracet 325 mg TDS pc x 3 days\nTab Pantocid 40 mg OD ac x 5 days\nTab Cefixime 200 mg BD pc x 5 days\nFollow-up: Review in OPD on 31/10/2026\nWarning signs: wound swelling, fever above 101 F\nDiet: light nutritious diet\nActivity: avoid bending or lifting",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-31"
+  },
+  {
+    "id": 34,
+    "name": "Chandrakala",
+    "age": 39,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Chandrakala Age: 39\nCondition: Post Op\nMedications:\nTab Moxikind-CV 625 mg BD pc x 5 days\nTab Dolo 650 mg TDS pc x 4 days\nTab Omez 20 mg OD ac x 7 days\nFollow-up: Review in OPD on 29/10/2026\nWarning signs: persistent vomiting, wound gaping\nDiet: soft easily digestible diet\nActivity: strictly no heavy work",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-29"
+  },
+  {
+    "id": 35,
+    "name": "Brahmaiah",
+    "age": 61,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Brahmaiah Age: 61\nCondition: Post Op\nMedications:\nTab Zifi 200 mg BD pc x 7 days\nTab Paracetamol 650 mg SOS when needed x 5 days\nTab Pantoprazole 40 mg OD ac x 7 days\nFollow-up: Review in OPD on 02/11/2026\nWarning signs: chills and fever, foul smelling discharge\nDiet: high protein diet, drink clean water\nActivity: gentle mobilization",
+    "expected_med_count": 3,
+    "expected_date": "2026-11-02"
+  },
+  {
+    "id": 36,
+    "name": "Geetha Vani",
+    "age": 44,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Geetha Vani Age: 44\nCondition: Post Op\nMedications:\nTab Augmentin 625 mg BD pc x 5 days\nTab Voveran 50 mg BD pc x 3 days\nTab Pan 40 mg OD ac x 5 days\nFollow-up: Review in OPD on 27/10/2026\nWarning signs: severe abdominal pain, vomiting\nDiet: soft diet\nActivity: avoid strenuous activities",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-27"
+  },
+  {
+    "id": 37,
+    "name": "Samba Siva Rao",
+    "age": 50,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Samba Siva Rao Age: 50\nCondition: Post Op\nMedications:\nTab Ciprogut 500 mg BD pc x 5 days\nTab Calpol 500 mg TDS pc x 3 days\nTab Rantac 150 mg BD ac x 7 days\nFollow-up: Review in OPD on 30/10/2026\nWarning signs: burning urination, high fever\nDiet: plenty of fluids\nActivity: complete bed rest",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-30"
+  },
+  {
+    "id": 38,
+    "name": "Parvathi",
+    "age": 48,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Parvathi Age: 48\nCondition: Post Op\nMedications:\nTab Ultracet 325 mg BD pc x 3 days\nTab Pantocid 40 mg OD ac x 5 days\nFollow-up: Review in OPD on 26/10/2026\nWarning signs: excessive bleeding, fainting\nDiet: balanced nutritious diet\nActivity: avoid lifting weights",
+    "expected_med_count": 2,
+    "expected_date": "2026-10-26"
+  },
+  {
+    "id": 39,
+    "name": "Veeraiah",
+    "age": 53,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Veeraiah Age: 53\nCondition: Post Op\nMedications:\nTab Moxikind-CV 625 mg BD pc x 6 days\nTab Dolo 650 mg TDS pc x 3 days\nFollow-up: Review in OPD on 01/11/2026\nWarning signs: wound redness, wound discharge\nDiet: high protein diet\nActivity: avoid heavy exertion",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-01"
+  },
+  {
+    "id": 40,
+    "name": "Shanthi Priya",
+    "age": 35,
+    "category": "post_op",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Shanthi Priya Age: 35\nCondition: Post Op\nMedications:\nTab Augmentin 625 mg BD pc x 5 days\nTab Paracetamol 500 mg TDS pc x 3 days\nTab Pan 40 mg OD ac x 5 days\nFollow-up: Review in OPD on 25/10/2026\nWarning signs: high fever, severe incision pain\nDiet: soft home cooked meals\nActivity: rest at home",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-25"
+  },
+  {
+    "id": 41,
+    "name": "Swapna",
+    "age": 24,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Swapna Age: 24\nCondition: Maternity\nMedications:\nTab Folvite 5 mg OD pc x 30 days\nTab Shelcal 500 mg BD pc x 30 days\nTab Orofer-XT 100 mg OD pc x 30 days\nFollow-up: Review in OPD on 28/10/2026\nWarning signs: heavy vaginal bleeding, severe lower abdominal pain\nDiet: high iron diet, adequate fluids\nActivity: avoid heavy domestic chores",
+    "expected_med_count": 3,
+    "expected_date": "2026-10-28"
+  },
+  {
+    "id": 42,
+    "name": "Sirisha",
+    "age": 27,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Sirisha Age: 27\nCondition: Maternity\nMedications:\nTab Labetalol 100 mg BD pc x 14 days\nTab Shelcal 500 mg OD pc x 30 days\nFollow-up: Review in OPD on 04/11/2026\nWarning signs: severe headache, blurred vision\nDiet: low salt diet\nActivity: adequate rest, avoid stress",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-04"
+  },
+  {
+    "id": 43,
+    "name": "Mounika",
+    "age": 23,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Mounika Age: 23\nCondition: Maternity\nMedications:\nTab Gestofit 200 mg HS at bedtime x 14 days\nTab Folvite 5 mg OD pc x 30 days\nFollow-up: Review in OPD on 06/11/2026\nWarning signs: bleeding or spotting, severe cramps\nDiet: nutritious balanced diet\nActivity: strict bed rest",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-06"
+  },
+  {
+    "id": 44,
+    "name": "Divya Vani",
+    "age": 29,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Divya Vani Age: 29\nCondition: Maternity\nMedications:\nTab Orofer-XT 100 mg OD pc x 30 days\nTab Shelcal 500 mg BD pc x 30 days\nFollow-up: Review in OPD on 10/11/2026\nWarning signs: fever with chills, foul smelling lochia\nDiet: protein and iron rich diet\nActivity: normal light walking",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-10"
+  },
+  {
+    "id": 45,
+    "name": "Pooja Reddy",
+    "age": 26,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Pooja Reddy Age: 26\nCondition: Maternity\nMedications:\nTab Labetalol 100 mg TDS pc x 14 days\nTab Shelcal 500 mg OD pc x 30 days\nFollow-up: Review in OPD on 02/11/2026\nWarning signs: epigastric pain, visual disturbances\nDiet: low salt diet\nActivity: rest in left lateral position",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-02"
+  },
+  {
+    "id": 46,
+    "name": "Deepika",
+    "age": 25,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Deepika Age: 25\nCondition: Maternity\nMedications:\nTab Folvite 5 mg OD pc x 45 days\nTab Shelcal 500 mg BD pc x 45 days\nTab Orofer-XT 100 mg OD pc x 45 days\nFollow-up: Review in OPD on 12/11/2026\nWarning signs: calf pain or swelling, heavy bleeding\nDiet: green leafy vegetables, milk\nActivity: light mobilization",
+    "expected_med_count": 3,
+    "expected_date": "2026-11-12"
+  },
+  {
+    "id": 47,
+    "name": "Kalyani",
+    "age": 28,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Kalyani Age: 28\nCondition: Maternity\nMedications:\nTab Gestofit 200 mg HS at bedtime x 21 days\nTab Shelcal 500 mg OD pc x 30 days\nFollow-up: Review in OPD on 08/11/2026\nWarning signs: severe abdominal cramps, bleeding\nDiet: soft nutritious food\nActivity: bed rest",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-08"
+  },
+  {
+    "id": 48,
+    "name": "Anusha",
+    "age": 22,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Anusha Age: 22\nCondition: Maternity\nMedications:\nTab Orofer-XT 100 mg OD pc x 60 days\nTab Folvite 5 mg OD pc x 60 days\nFollow-up: Review in OPD on 16/11/2026\nWarning signs: extreme pale skin, breathlessness\nDiet: iron rich diet with jaggery\nActivity: avoid strenuous work",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-16"
+  },
+  {
+    "id": 49,
+    "name": "Swathi",
+    "age": 30,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Swathi Age: 30\nCondition: Maternity\nMedications:\nTab Labil 100 mg BD pc x 14 days\nTab Shelcal 500 mg BD pc x 30 days\nFollow-up: Review in OPD on 05/11/2026\nWarning signs: swelling of face and hands, headache\nDiet: low salt diet\nActivity: adequate bed rest",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-05"
+  },
+  {
+    "id": 50,
+    "name": "Tejaswi",
+    "age": 26,
+    "category": "maternity",
+    "summary": "DISCHARGE SUMMARY\nPatient Name: Tejaswi Age: 26\nCondition: Maternity\nMedications:\nTab Folvite 5 mg OD pc x 30 days\nTab Shelcal 500 mg BD pc x 30 days\nFollow-up: Review in OPD on 14/11/2026\nWarning signs: persistent high fever, severe pain\nDiet: nutritious diet, plenty of water\nActivity: gradual return to normal activity",
+    "expected_med_count": 2,
+    "expected_date": "2026-11-14"
+  }
+]
