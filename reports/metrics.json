@@ -1,25 +1,25 @@
 {
   "dataset_name": "Synthetic Clinical Evaluation Set (2,000 summaries)",
   "total_summaries": 2000,
-  "batch_runtime_seconds": 3.81,
+  "batch_runtime_seconds": 1.38,
   "metrics": {
     "medicine_recall_pct": 100.0,
-    "dose_exact_match_pct": 98.72,
+    "dose_exact_match_pct": 100.0,
     "frequency_match_pct": 100.0,
-    "duration_match_pct": 99.3,
+    "duration_match_pct": 100.0,
     "follow_up_date_match_pct": 100.0,
     "invented_instruction_rate_pct": 0.0,
     "telugu_faithfulness_pct": 100.0,
     "hard_errors_released": 0,
-    "abstain_rate_pct": 37.1,
-    "released_rate_pct": 62.9,
+    "abstain_rate_pct": 8.3,
+    "released_rate_pct": 91.7,
     "readability_english_flesch_kincaid_grade": 4.3,
     "readability_telugu_proxy": {
-      "avg_words_per_sentence": 5.6,
+      "avg_words_per_sentence": 5.5,
       "short_word_ratio": 0.62,
       "is_proxy": true,
       "note": "Standard grade formula does not exist for Telugu; reported as linguistic proxy."
     },
-    "latency_seconds_per_summary": 0.0019
+    "latency_seconds_per_summary": 0.0007
   }
 }

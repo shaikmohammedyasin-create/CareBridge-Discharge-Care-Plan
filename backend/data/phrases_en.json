@@ -30,10 +30,15 @@
     "diabetic diet": "Follow a diabetic diet; avoid sugar, sweets, and refined carbohydrates",
     "soft diet": "Eat soft, easily digestible food for the next few days",
     "high protein diet": "Eat protein-rich foods such as dal, eggs, and boiled pulses",
-    "adequate hydration": "Drink plenty of clean water throughout the day unless restricted"
+    "adequate hydration": "Drink plenty of clean water throughout the day unless restricted",
+    "soft easily digestible diet": "Eat soft, easily digestible food for the next few days",
+    "plenty of clean water": "Drink plenty of clean, filtered water"
   },
   "common_activity": {
     "avoid heavy lifting": "Avoid lifting heavy objects for 4 weeks",
+    "avoid heavy household chores": "Avoid heavy domestic work or chores",
+    "no strenuous work": "Avoid all strenuous physical exertion",
+    "adequate rest": "Get adequate rest and sleep",
     "bed rest": "Strict bed rest for 3 days; avoid exertion",
     "deep breathing exercises": "Practice gentle deep breathing exercises 3 times daily",
     "regular walking": "Take light 15-minute walks twice daily as tolerated"

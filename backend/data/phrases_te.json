@@ -55,11 +55,16 @@
     "low fat diet": "నూనెలు, కొవ్వు పదార్థాలు తక్కువగా వాడండి",
     "avoid salted pickles": "ఉప్పు ఊరగాయలు మరియు చిరుతిళ్లు తినవద్దు",
     "high iron diet": "పాలకూర, బెల్లం వంటి ఐరన్ ఎక్కువగా ఉండే ఆహారం తీసుకోండి",
-    "green leafy vegetables and milk": "ఆకుకూరలు మరియు పాలు సమృద్ధిగా తీసుకోండి"
+    "green leafy vegetables and milk": "ఆకుకూరలు మరియు పాలు సమృద్ధిగా తీసుకోండి",
+    "soft easily digestible diet": "తేలికగా జీర్ణమయ్యే మెత్తని ఆహారం మాత్రమే తీసుకోండి",
+    "plenty of clean water": "తగినంత శుభ్రమైన తాగునీరు తీసుకోండి"
   },
   "common_activity": {
     "avoid heavy lifting": "4 వారాల వరకు ఎటువంటి బరువైన పనులు లేదా బరువులు ఎత్తకండి",
     "avoid heavy domestic chores": "ఇంటి బరువైన పనులు చేయకండి",
+    "avoid heavy household chores": "ఇంటి బరువైన పనులు చేయకండి",
+    "no strenuous work": "శ్రమతో కూడిన పనులు అస్సలు చేయవద్దు",
+    "adequate rest": "తగినంత విశ్రాంతి మరియు నిద్ర అవసరం",
     "bed rest": "పూర్తి విశ్రాంతి తీసుకోండి; శ్రమతో కూడిన పనులు చేయకండి",
     "strict bed rest": "పూర్తి బెడ్ రెస్ట్ పాటించండి",
     "deep breathing exercises": "రోజూ 3 సార్లు నెమ్మదిగా శ్వాస వ్యాయామాలు చేయండి",
